@@ -1,0 +1,22 @@
+[project]
+name = "documind-backend"
+version = "1.0.0"
+description = "DocuMind RAG API: PDF/DOCX ingestion, hybrid retrieval on pgvector, cited answers over SSE."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+extend-exclude = [".cache"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N", "SIM"]
+ignore = ["B008"]  # FastAPI Depends()/File()/Query() defaults are idiomatic
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
