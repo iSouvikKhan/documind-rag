@@ -1,0 +1,25 @@
+{
+  "description": "Questions over the fictional sample corpus in eval/sample_docs. 'evidence' is a short exact phrase that a relevant chunk must contain; 'answer_keywords' must appear in a correct answer. Items with expected_document=null are not answerable from the corpus.",
+  "items": [
+    {"id": "hb-pto-accrual", "question": "How many days of PTO do full-time employees accrue per month?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "1.75 days of paid time off", "answer_keywords": ["1.75"]},
+    {"id": "hb-pto-carryover", "question": "How many unused vacation days can I carry over, and when do they expire?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "Up to 5 unused PTO days", "answer_keywords": ["5", "March 31"]},
+    {"id": "hb-remote", "question": "How many days a week can employees work from home?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "remotely up to 3 days per week", "answer_keywords": ["3"]},
+    {"id": "hb-stipend", "question": "What home office stipend do new remote employees get?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "home office stipend of $600", "answer_keywords": ["600"]},
+    {"id": "hb-receipts", "question": "Above what amount do I need a receipt for an expense?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "Receipts are required for any expense over $25", "answer_keywords": ["25"]},
+    {"id": "hb-parental", "question": "How long is paid parental leave for primary caregivers?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "16 weeks of fully paid parental leave", "answer_keywords": ["16 weeks"]},
+    {"id": "hb-learning", "question": "What is the annual learning budget?", "expected_document": "brightpath_employee_handbook.docx", "evidence": "annual learning budget of $1,200", "answer_keywords": ["1,200"]},
+    {"id": "man-cwire", "question": "Does the Aurora T2 need a C-wire, and what if I don't have one?", "expected_document": "aurora_t2_user_manual.pdf", "evidence": "A C-wire (common wire) is required", "answer_keywords": ["adapter"]},
+    {"id": "man-baseboard", "question": "Can I use the Aurora T2 with 240V baseboard heaters?", "expected_document": "aurora_t2_user_manual.pdf", "evidence": "not compatible with line-voltage", "answer_keywords": ["not compatible"]},
+    {"id": "man-wifi-band", "question": "Which Wi-Fi frequency band does the thermostat support?", "expected_document": "aurora_t2_user_manual.pdf", "evidence": "2.4 GHz Wi-Fi networks only", "answer_keywords": ["2.4 GHz"]},
+    {"id": "man-e7", "question": "What does error code E7 mean?", "expected_document": "aurora_t2_user_manual.pdf", "evidence": "E7: Wi-Fi authentication failed", "answer_keywords": ["authentication"]},
+    {"id": "man-reset", "question": "How do I factory reset the thermostat?", "expected_document": "aurora_t2_user_manual.pdf", "evidence": "factory reset the thermostat", "answer_keywords": ["15 seconds"]},
+    {"id": "man-warranty", "question": "How long is the warranty on the Aurora T2?", "expected_document": "aurora_t2_user_manual.pdf", "evidence": "2-year limited warranty", "answer_keywords": ["2-year"]},
+    {"id": "sec-password", "question": "What is the minimum password length?", "expected_document": "brightpath_security_policy.pdf", "evidence": "at least 14 characters", "answer_keywords": ["14"]},
+    {"id": "sec-incident", "question": "How quickly must a suspected security incident be reported?", "expected_document": "brightpath_security_policy.pdf", "evidence": "within 1 hour of discovery", "answer_keywords": ["1 hour"]},
+    {"id": "sec-logs", "question": "How long are customer application logs kept?", "expected_document": "brightpath_security_policy.pdf", "evidence": "retained for 13 months", "answer_keywords": ["13 months"]},
+    {"id": "sec-vendors", "question": "What report must vendors that process customer data have?", "expected_document": "brightpath_security_policy.pdf", "evidence": "SOC 2 Type II", "answer_keywords": ["SOC 2"]},
+    {"id": "neg-stock", "question": "What was Brightpath's stock price at the end of 2025?", "expected_document": null},
+    {"id": "neg-bluetooth", "question": "Does the Aurora T2 support Bluetooth speakers?", "expected_document": null},
+    {"id": "neg-gym", "question": "Does Brightpath offer a gym membership allowance?", "expected_document": null}
+  ]
+}

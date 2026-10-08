@@ -1,0 +1,9 @@
+{
+  "chunking": [
+    {"name": "small", "chunk_size": 250, "chunk_overlap": 40},
+    {"name": "medium", "chunk_size": 500, "chunk_overlap": 80},
+    {"name": "large", "chunk_size": 1000, "chunk_overlap": 150}
+  ],
+  "prompt_styles": ["grounded", "basic"],
+  "top_k": 4
+}
